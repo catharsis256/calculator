@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/wrapper_screen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            grid:cardCornerRadius="5dp"
+            grid:cardElevation="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            grid:layout_constraintLeft_toLeftOf="parent"
+            grid:layout_constraintRight_toRightOf="parent"
+            grid:layout_constraintTop_toTopOf="parent"
+            grid:layout_constraintVertical_chainStyle="packed">
+
+            <TextView
+                android:id="@+id/screen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FF00"
+                android:ellipsize="start"
+                android:gravity="end"
+                android:hint="@string/screen_hint"
+                android:singleLine="true"
+                android:textSize="40sp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/numpad"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            grid:columnCount="4"
+            grid:layout_constraintBottom_toBottomOf="parent"
+            grid:layout_constraintLeft_toLeftOf="parent"
+            grid:layout_constraintRight_toRightOf="parent"
+            grid:layout_constraintTop_toBottomOf="@id/wrapper_screen"
+            grid:rowCount="5">
+
+            <Button
+                android:id="@+id/clear_button"
+                android:text="@string/clearButton"
+                grid:layout_columnSpan="2"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/percent_button"
+                android:text="@string/percentage"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_divide"
+                android:text="@string/sign_divide"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_7"
+                android:text="@string/button_seven"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_8"
+                android:text="@string/button_eight"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_9"
+                android:text="@string/button_nine"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_plus"
+                android:text="@string/sign_plus"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_4"
+                android:text="@string/button_four"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_5"
+                android:text="@string/button_five"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_6"
+                android:text="@string/button_six"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_multiply"
+                android:text="@string/sing_multiply"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_1"
+                android:text="@string/button_one"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_2"
+                android:text="@string/button_two"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_3"
+                android:text="@string/button_three"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_minus"
+                android:text="@string/sign_minus"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_plus_minus"
+                android:text="@string/sign_plus_minus"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_0"
+                android:text="@string/button_zero"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_bullet"
+                android:text="@string/sign_button"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/button_equals"
+                android:text="@string/sign_equals"
+                grid:layout_columnWeight="1"
+                grid:layout_rowWeight="1" />
+
+        </android.support.v7.widget.GridLayout>
+
+</android.support.constraint.ConstraintLayout>
